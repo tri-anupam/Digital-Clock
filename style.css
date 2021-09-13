@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    font-family:  'Orbitron', sans-serif;
+}
+h1{
+    text-align: center;
+    margin-bottom: 30vh;
+    margin-top: 2vh;
+    font-size: 50px;
+    color: #3d1604;
+    text-decoration: underline;
+}
+.big-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.container{
+    height: 300px;
+    width:600px;
+    border-radius: 25px;
+    background-color: #3b3b3b;
+    box-shadow: 10px 10px 5px #ccc;
+      -moz-box-shadow: 10px 10px 5px #ccc;
+      -webkit-box-shadow: 10px 10px 5px #ccc;
+      -khtml-box-shadow: 10px 10px 5px #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.content{
+    height: 250px;
+    width: 530px;
+    background-color: #dbdbdb;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset -2px 2px 4px 4px white;
+                 
+}
+.main-content{
+    height: 190px;
+    width:460px;
+    background-color:#8aa57a ;
+    border-radius: 7px;
+    box-shadow: -2px 2px 4px 4px white;
+    padding: 10px;
+
+}
+.main-content hr{
+    height: 2px;
+    background-color: black;
+}
+#hour, #minute, #second{
+    display: inline-block;
+    font-size: 80px;
+}
+#second{
+    font-size: 50px;
+}
+#day, #date, #month, #year{
+    display: inline-block;
+    font-size: 40px;
+}
+@media(max-width:700px){
+    .container{
+        height: 300px;
+        width: 400px;
+    }
+    .content{
+        height: 250px;
+        width: 350px;
+    }
+    .main-content{
+        height: 200px;
+        width: 300px;
+    }
+    #hour, #minute, #second{
+        display: inline-block;
+        font-size: 80px;
+    }
+    #second{
+        font-size: 40px;
+    }
+    #day, #date, #month, #year{
+        display: inline-block;
+        font-size: 25px;
+        margin-top: 10px;
+    }
+}
